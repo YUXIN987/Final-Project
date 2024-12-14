@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "real-estate-toolkit"
+version = "0.1.0"
+description = ""
+authors = ["YUXIN XIE <yuxin.xie01@estudiant.upf.edu>"]
+readme = "README.md"
+packages = [{include = "real_estate_toolkit", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.13"
+numpy = "^2.2.0"
+polars = "^1.17.1"
+plotly = "^5.24.1"
+scikit-learn = "^1.6.0"
+pandas = "^2.2.3"
+scipy = "^1.14.1"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
